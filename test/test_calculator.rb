@@ -23,7 +23,8 @@ class CalculatorTest < Test::Unit::TestCase
   end
   
   def test_can_divide
-    actual = @calculator.divide(10, 5)
-    assert_equal(2, actual)
+    actual = @calculator.divide(17, 10)
+  rescue ZeroDivisionError
+    assert_equal(1.7, actual)
   end
 end

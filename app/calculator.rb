@@ -13,6 +13,6 @@ class Calculator
   end
   
   def divide(x,y)
-    x / y
+    x.to_f / y.to_f
   end
 end
